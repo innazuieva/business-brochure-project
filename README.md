@@ -1,2 +1,2 @@
-# business-brochure-project
+# Business Brochure Project
 Business Brochure
