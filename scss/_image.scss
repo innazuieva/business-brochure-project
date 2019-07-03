@@ -3,3 +3,44 @@
 img {
     object-fit: contain;
 }
+
+
+// Home Page Images - Main Section
+
+
+.new-arrivals-img {
+    height: 35vh;
+    max-width: 80%;
+    object-fit: cover;
+}
+
+.photo-grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10%;
+}
+
+.grid-item {
+    width: 50vw;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.grid-item02 {
+    width: 50vw;
+    height: 25vh;
+    object-fit: cover;
+}
+
+.description {
+    padding: 5% 0;
+
+    h2,
+    p {
+        padding: 5px;
+    }
+}
+
+.center {
+    text-align: center;
+}

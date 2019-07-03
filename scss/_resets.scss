@@ -18,6 +18,14 @@ img {
 }
 
 // Remove Margins on the body
-body {
+body,
+h1,
+h2,
+h3,
+p {
     margin: 0;
+}
+
+p {
+    font-size: 0.8em;
 }

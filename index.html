@@ -115,7 +115,7 @@
 
     <!-- Main Section -->
 
-    <main>
+    <main class="home-page-main">
 
         <!-- Sale -->
 
@@ -124,15 +124,16 @@
         <!-- Slide-show -->
 
 
-        <div class="slide-show home-slide-show">
-            <img class="home-slideshow-img" src="images/banner.jpg" alt="Banner image">
-            <img class="home-slideshow-img" src="images/banner.jpg" alt="Banner image">
-            <img class="home-slideshow-img" class="home-slideshow-img" src="images/banner.jpg" alt="Banner image">
-            <img src="images/banner.jpg" alt="Banner image">
-            <img class="home-slideshow-img" src="images/banner.jpg" alt="Banner image">
+        <div class="slide-show cycle-slideshow home-slide-show" data-cycle-timeout="4000" data-cycle-speed="1000">
+            <img class="d-block w-100 home-slideshow-img" src="images/banner.jpg" alt="Banner image">
+            <img class="d-block w-100 home-slideshow-img" src="images/women-img01.jpg" alt="Banner image">
+            <img class="d-block w-100 home-slideshow-img" class="home-slideshow-img" src="images/women-img03.jpg"
+                alt="Banner image">
+            <img src="images/clothing01.jpg" alt="Banner image">
+            <img class="d-block w-100 home-slideshow-img" src="images/clothing02.jpg" alt="Banner image">
 
-            <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
-            <a class="next" onclick="plusDivs(+1)">&#10095;</a>
+            <!-- <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+            <a class="next" onclick="plusDivs(+1)">&#10095;</a> -->
 
 
         </div>
@@ -143,18 +144,26 @@
 
         <!-- Content -->
 
-        <img src="images/clothing01.jpg" alt="New arrivals">
-        <h2>New Arrivals</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum ea odio distinctio magni maiores beatae
-            repellat mollitia, eveniet voluptas porro dolore ipsum doloribus, sunt corporis minus.</p>
+        <img class="new-arrivals-img" src="images/women-img04.jpg" alt="New arrivals">
+        <div class="description">
+            <h2>New Arrivals</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum ea odio distinctio.</p>
+        </div>
 
-        <img src="images/clothing02.jpg" alt="New arrivals">
-        <img src="images/clothing01.jpg" alt="New arrivals">
-        <img src="images/clothing02.jpg" alt="New arrivals">
-        <img src="images/clothing01.jpg" alt="New arrivals">
-        <h2>New Arrivals</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum ea odio distinctio magni maiores beatae
-            repellat mollitia, eveniet voluptas porro dolore ipsum doloribus, sunt corporis minus.</p>
+
+
+        <div class="photo-grid-container">
+            <img class="grid-item" src="images/women-img04.jpg" alt="New arrivals">
+            <img class="grid-item" src="images/women-img03.jpg" alt="New arrivals">
+            <img class="grid-item02" src="images/women-img01.jpg" alt="New arrivals">
+            <img class="grid-item02" src="images/women-img04.jpg" alt="New arrivals">
+        </div>
+        <div class="description">
+            <h2 class="center">Some Text Here</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum ea odio distinctio magni maiores
+                beatae
+                repellat mollitia eveniet.</p>
+        </div>
 
 
 
@@ -210,7 +219,9 @@
 
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="scripts/jquery.cycle2.min.js"></script>
     <script src="scripts/scripts.js"></script>
 
 </body>

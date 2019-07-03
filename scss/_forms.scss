@@ -9,9 +9,10 @@
     bottom: 0;
     right: 0;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.486);
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px;
     padding: 0 10px 10px;
     font-size: 0.5em;
+    z-index: 150;
 }
 
 .live-chat-form {
@@ -48,15 +49,20 @@ header h3 {
     bottom: 15px;
     right: 15px;
     width: 13%;
+    filter: drop-shadow(0 0 3px rgb(255, 255, 255));
+    z-index: 150;
 }
 
 #name,
 #email,
 #question,
 .submit {
+    padding: 5px;
     display: block;
     width: 100%;
     margin: 0;
+    border-radius: 4px 4px;
+    border: 1px solid $brand-color;
 }
 
 .input {
