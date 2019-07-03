@@ -40,9 +40,17 @@
         </a>
 
 
+        <!-- <div class="category">
 
-        <a href="mens.html"><img class="icon man-icon" src="images/man.png" alt="Man"></a>
-        <a href="womens.html"><img class="icon woman-icon" src="images/woman.png" alt="Women"></a>
+            <a href="womens.html"><img class="icon woman-icon" src="images/woman.png" alt="Women"></a>
+            <a href="mens.html"><img class="icon man-icon" src="images/man.png" alt="Man"></a>
+        </div> -->
+
+
+        <ul class="category">
+            <li><a href="womens.html">Women</a></li>
+            <li><a href="mens.html">Men</a></li>
+        </ul>
 
 
         <!-- Hamburger Button -->
@@ -75,19 +83,25 @@
 
         <form action="#0" method="post" name="live-chat-form" class="live-chat-form" id="live-chat-form">
 
-            <h2>Lime</h2>
+            <img class="logo live-chat-logo" src="images/lime.png" alt="Lime">
+            <img id="close-chat-btn" class="close-chat-btn" src="images/close.png" alt="Close">
+
             <h3>Live Chat</h3>
-
-            <label for="name">Your name: (required)</label>
-            <input type="text" id="name" name="name">
-
-            <label for="email">Your email: (required)</label>
-            <input type="email" id="email" name="email">
-
-            <label for="question">Question: (required)</label>
-            <input type="text" id="question" name="question">
-
-            <input type="submit" value="Chat Now">
+            <div class="input">
+                <label for="name">Your name: (required)</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="input">
+                <label for="email">Your email: (required)</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="input">
+                <label for="question">Question: (required)</label>
+                <input type="text" id="question" name="question">
+            </div>
+            <div class="input">
+                <input class="submit" type="submit" value="Chat Now">
+            </div>
 
         </form>
 
@@ -110,7 +124,7 @@
         <!-- Slide-show -->
 
 
-        <div class="slide-show">
+        <div class="slide-show home-slide-show">
             <img class="home-slideshow-img" src="images/banner.jpg" alt="Banner image">
             <img class="home-slideshow-img" src="images/banner.jpg" alt="Banner image">
             <img class="home-slideshow-img" class="home-slideshow-img" src="images/banner.jpg" alt="Banner image">

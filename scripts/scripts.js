@@ -19,12 +19,22 @@ menu.addEventListener('mousedown', function (e) {
 
 const chatButton = document.getElementById('live-chat-icon');
 const chatForm = document.getElementById('live-chat-form');
+const closeChatButton = document.getElementById('close-chat-btn');
 
 chatButton.addEventListener('click', openChat);
 
 function openChat() {
-    console.log('hello')
-    chatForm.classList.toggle('showChat');
+    chatForm.classList.add('live-chat-form-show');
+    chatForm.classList.remove('live-chat-form');
+    //     chatForm.classList.toggle('live-chat-form');
+    //     chatForm.classList.toggle('live-chat-form-show');
+}
+
+closeChatButton.addEventListener('click', closeChat);
+console.log('hello');
+
+function closeChat() {
+    chatForm.classList.add('live-chat-form');
 }
 
 

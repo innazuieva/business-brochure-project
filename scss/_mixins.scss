@@ -1,0 +1,13 @@
+@mixin margin-center {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+// Round Border for Icons
+@mixin icons-border-style {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}

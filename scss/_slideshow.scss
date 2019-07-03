@@ -7,6 +7,10 @@
     min-height: 60vh;
 }
 
+.home-slide-show img {
+    object-fit: cover;
+}
+
 .prev,
 .next {
     position: absolute;
