@@ -1,0 +1,22 @@
+// Slideshow on the Home Page
+
+
+.slide-show {
+    display: flex;
+    overflow: hidden;
+    min-height: 60vh;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
