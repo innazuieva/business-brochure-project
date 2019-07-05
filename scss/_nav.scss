@@ -7,20 +7,23 @@
     &:hover {
         opacity: $hoverOpacity;
     }
+
+    @media (min-width: 700px) {
+        width: 2.5%
+    }
 }
 
 .sign-in-icon {
     position: absolute;
     right: 12%;
     top: 2%;
-    // @include icons-border-style;
 }
 
-.cart-icon {
+.cart-icon,
+.help-icon {
     position: absolute;
     right: 4%;
     top: 2%;
-    // @include icons-border-style;
 }
 
 .logo {
@@ -48,18 +51,17 @@ header h1 {
     &:hover {
         opacity: $hoverOpacity;
     }
+
+    @media (min-width: 700px) {
+        padding: 10px 40px;
+    }
 }
 
-
-// .man-icon {
-//     width: 12%;
-//     @include icons-border-style;
-// }
-
-// .woman-icon {
-//     width: 12%;
-//     @include icons-border-style;
-// }
+.category li a {
+    @media (min-width: 700px) {
+        font-size: 1.5em;
+    }
+}
 
 ul {
     list-style: none;
@@ -203,14 +205,67 @@ nav {
         &:focus {
             display: block;
             background-color: #0000000c;
-            // padding: 10px;
         }
     }
 }
 
+@media not all and (min-width: 700px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
 
-.hide-on-mobile {
+
+
+.need-help {
+    position: absolute;
+    right: 4%;
+    top: 2%;
+
+    @media (min-width: 700px) {
+        top: 3%;
+    }
+}
+
+
+.hide {
     display: none;
+}
+
+
+@media (min-width: 700px) {
+
+    .hide-on-desktop {
+        display: none;
+    }
+
+    .cart-icon {
+        right: 2%;
+    }
+
+    .sign-in {
+        position: absolute;
+        right: 6%;
+        top: 3%
+    }
+
+    .locations {
+        position: absolute;
+        left: 6%;
+        top: 3%
+    }
+
+    .canadian-flag {
+        position: absolute;
+        left: 2%;
+        top: 2%
+    }
+
+    .logo {
+        max-width: 10%;
+        padding-top: 0;
+    }
+
 }
 
 // End of Hamburger Styles
