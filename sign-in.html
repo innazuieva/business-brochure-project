@@ -20,27 +20,48 @@
 
 
         <!-- Small icons on the very top of the page including:
-                        Canadian Flag, Shopping Cart, Sin In, Location, Company Name and Men/Women Icons -->
+            Canadian Flag, Shopping Cart, Sin In, Location, Company Name and Men/Women Icons -->
 
 
 
-        <img class="icon" src="images/canada.png" alt="Canadian flag">
+        <img class="icon hide-on-mobile canadian-flag" src="images/canada.png" alt="Canadian flag">
 
-        <a href="#0">Locations</a>
+        <a class="hide-on-mobile locations" href="#0">Locations</a>
 
-        <a href="#0"><img class="icon" src="images/help.png" alt="Sign in">Need Help?</a>
+        <a class="hide-on-mobile sign-in hide" href="sign-in.html">Sign In</a>
 
+        <a class="hide-on-desktop hide-on-mobile" href="sign-in.html"><img class="icon sign-in-icon"
+                src="images/user.png" alt="Sign in"></a>
+
+        <a href="cart.html"><img class="icon cart-icon hide hide-on-mobile" src="images/shopping-cart.png"
+                alt="Shopping cart"></a>
+
+        <a href="#0">
+            <img class="icon hide-on-desktop need-help" src="images/help.png" alt="Need help">
+            <span class="hide-on-mobile need-help">Need Help?</span>
+        </a>
 
         <a href="index.html">
-            <h1>Lime</h1>
+            <img class="logo" src="images/lime.png" alt="Lime">
         </a>
 
 
+        <!-- <div class="category">
+
+            <a href="womens.html"><img class="icon woman-icon" src="images/woman.png" alt="Women"></a>
+            <a href="mens.html"><img class="icon man-icon" src="images/man.png" alt="Man"></a>
+        </div> -->
+
+
+        <ul class="category hide">
+            <li><a href="womens.html">Women</a></li>
+            <li><a href="mens.html">Men</a></li>
+        </ul>
 
 
         <!-- Hamburger Button -->
 
-        <button class="menu" id="menu">
+        <button class="menu hide-on-desktop" id="menu">
             <span class="button-content">
                 <span class="text">Menu</span>
                 <span class="bar"></span>
@@ -52,18 +73,48 @@
 
         <nav>
             <ul>
-                <li><a href="#0"></a>Sale</li>
-                <li><a href="#0"></a>New</li>
-                <li><a href="#0"></a>Clothing</li>
-                <li><a href="#0"></a>Brands</li>
-                <li><a href="#0"></a>Accessories</li>
+                <li><a href="#0">Sale</a></li>
+                <li><a href="#0">New</a></li>
+                <li><a href="#0">Clothing</a></li>
+                <li><a href="#0">Brands</a></li>
+                <li><a href="#0">Accessories</a></li>
             </ul>
         </nav>
 
 
+        <!-- Live Chat -->
+
+        <a href="#0"><img class="icon live-chat-icon hide" id="live-chat-icon" src="images/chat.png"
+                alt="Live chat"></a>
+
+
+        <form action="#0" method="post" name="live-chat-form" class="live-chat-form" id="live-chat-form">
+
+            <img class="logo live-chat-logo" src="images/lime.png" alt="Lime">
+            <img id="close-chat-btn" class="close-chat-btn" src="images/close.png" alt="Close">
+
+            <h3>Live Chat</h3>
+            <div class="input">
+                <label for="name">Your name: (required)</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="input">
+                <label for="email">Your email: (required)</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="input">
+                <label for="question">Question: (required)</label>
+                <input type="text" id="question" name="question">
+            </div>
+            <div class="input">
+                <input class="submit" type="submit" value="Chat Now">
+            </div>
+
+        </form>
 
 
     </header>
+
 
 
 
@@ -124,7 +175,10 @@
 
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="scripts/jquery.cycle2.min.js"></script>
+    <script src="scripts/scripts.js"></script>
 
 </body>
 
