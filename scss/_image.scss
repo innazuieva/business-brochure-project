@@ -51,8 +51,71 @@ img {
 
 // Men's Page Images - Main Section
 
+* {
+    box-sizing: border-box;
+}
+
 .mens-banner {
-    width: 50%;
-    position: absolute;
-    color: red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    size: 25m;
+}
+
+.mens-center-content {
+    float: left;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    size: 80%;
+}
+
+.man-street {
+    margin-right: 50px;
+    margin-left: 100px;
+    size: 50%;
+    border: 5px solid #00FF00;
+}
+
+.man-ledge {
+    margin-left: 80px;
+    margin-right: 15px;
+    border: 5px solid #00FF00;
+}
+
+
+.mens-announcement {
+    display: block;
+    margin-left: 300px;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+footer {
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #00FF00	;
+    padding: 10px;
+    height: auto;
+    width: 90%;
+    width: 981px;
+    margin: 0 auto 8px;
+}
+
+.foot-left {
+    text-align: left;
+}
+
+.foot-mid {
+    text-align: center;
+}
+
+.foot-right {
+    text-align: right;
+}
+
+.social {
+    text-align: center;
+    size: 2em;
 }
