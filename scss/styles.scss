@@ -8,25 +8,17 @@
 @import 'typography';
 
 
-@import 'body';
-
-@import 'nav';
+@import 'header';
 
 @import 'footer';
-@import 'buttons';
 @import 'forms';
-@import 'image';
-@import 'scroll-horizontally';
-@import 'slideshow';
 
 
 
-// The partials below are the ideas for other components of the website (in case we need additional)
-
-// @import 'wrapper';
-// @import 'header';
-// @import 'hamburger';
-// @import 'main';
-// @import 'sections';
-// @import 'gallery';
-// @import 'table';
+@import 'home-main';
+@import 'womens-main';
+@import 'womens-brands-main';
+@import 'mens-main';
+@import 'mens-brands-main';
+@import 'cart-main';
+@import 'sign-in-main';

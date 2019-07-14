@@ -1,0 +1,163 @@
+// Home Page Images - Main Section
+
+
+.home-page-main {
+
+
+
+    // Sale Line on the Home Page
+
+    .sale {
+        background-color: $brand-color;
+        padding: 25px 0;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        .lowercase {
+            text-transform: lowercase;
+        }
+
+
+        @media (min-width: $tabletScreenWide) {
+            font-size: 2em;
+            padding: 10px 0;
+
+            .lowercase {
+                font-size: 0.5em;
+            }
+        }
+    }
+
+
+
+    // Slideshow on the Home Page
+
+
+    .slide-show {
+        height: 70vh;
+        margin-bottom: 20%;
+
+        @media (min-width: 700px) {
+            margin-bottom: 70px;
+            ;
+        }
+    }
+
+    .home-slide-show img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+
+    // Images
+
+
+    img {
+        object-fit: contain;
+    }
+
+    .flex-on-desktop {
+        @media (min-width: 700px) {
+            display: flex;
+        }
+
+        .new-arrivals-img {
+            height: 35vh;
+            max-width: 80%;
+            object-fit: cover;
+
+            @media (min-width: 700px) {
+                height: 60vh;
+            }
+        }
+    }
+
+
+    .photo-grid-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 10%;
+
+        .grid-item {
+            width: 50vw;
+            height: 30vh;
+            object-fit: cover;
+        }
+
+        .grid-item02 {
+            width: 50vw;
+            height: 25vh;
+            object-fit: cover;
+
+            @media (min-width: 700px) {
+                height: 40vh;
+            }
+        }
+
+
+
+        .long-img {
+            @media (min-width: 700px) {
+                height: 80vh;
+            }
+        }
+
+        .short-img {
+            @media (min-width: 700px) {
+                height: 50vh;
+            }
+        }
+
+    }
+
+    .grid-section {
+        position: relative;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5% 0;
+
+        h2,
+        p {
+            padding: 5px;
+        }
+
+        @media (min-width: 700px) {
+            font-size: 1.5em;
+            padding: 0;
+        }
+
+    }
+
+    .description-02 {
+
+        @media (min-width: 700px) {
+            position: absolute;
+            bottom: 0;
+        }
+
+        @media (min-width: 700px) {
+            padding-left: 20px;
+        }
+
+        .center {
+            text-align: center;
+
+            @media (min-width: 700px) {
+                text-align: start;
+            }
+        }
+
+        .paragraph-02 {
+            @media (min-width: 700px) {
+                max-width: 50%;
+            }
+        }
+    }
+}

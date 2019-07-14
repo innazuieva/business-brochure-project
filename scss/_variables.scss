@@ -8,3 +8,12 @@ $text-color-light: white;
 
 // Opacity for Hover State on Buttons
 $hoverOpacity: 0.6;
+
+
+// Function to
+// Convert Px to Ems
+@function em($px, $bc: 16) {
+    @return #{$px/$bc}em;
+}
+
+$tabletScreenWide: em(700);
