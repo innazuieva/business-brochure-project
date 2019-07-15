@@ -1,0 +1,15 @@
+.scroll-images-brands {
+    overflow: auto;
+    white-space: nowrap;
+    margin: 15px;
+    ;
+
+    img {
+        max-width: 60%;
+        padding: 5px;
+
+        @media (min-width: $tabletScreenWide) {
+            max-width: 22%;
+        }
+    }
+}

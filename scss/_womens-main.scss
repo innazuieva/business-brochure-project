@@ -1,44 +1,115 @@
-// .coloured-header {
-//     background-color: $brand-color;
-// }
-
-
-nav {
-    display: none;
+.womens-main {
+    display: block;
 
     @media (min-width: $tabletScreenWide) {
         display: flex;
+        padding: 5px 0;
     }
-}
 
-
-.womens-main {
-    padding: 20px 0;
-    display: flex;
-
-
-    .clothing-category-nav,
-    .filter-by-nav {
-        display: block;
-        // position: fixed;
-        font-size: 0.9em;
-        padding-left: 10px;
-
-        a,
-        li {
-            // font-size: 0.7em;
-            line-height: 1.9;
-        }
-
-        ul {
-            padding: 0 10px 0 15px;
+    @media (min-width: $tabletScreenWide) {
+        .sticky {
+            position: fixed;
+            top: 0;
         }
     }
+
+    .womens-nav {
+        display: flex;
+        max-width: 90%;
+        margin: auto;
+        justify-content: space-between;
+
+        h4 {
+            padding-bottom: 5px;
+        }
+
+        .size-nav,
+        .colors-nav,
+        .brands-nav {
+            display: none;
+        }
+
+        .show-sizeNav,
+        .show-colorsNav,
+        .show-brandsNav {
+            display: block;
+        }
+
+
+
+        @media (min-width: $tabletScreenWide) {
+            flex-direction: column;
+            justify-content: start;
+            margin: 0;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+
+
+
+
+        .sub-nav,
+        .sub-nav2 {
+            display: none;
+
+            @media (min-width: $tabletScreenWide) {
+                display: block;
+            }
+
+            &.show-subnav {
+                display: block;
+                padding-left: 0;
+            }
+        }
+
+
+        h3 {
+            font-size: 1em;
+            text-decoration: underline;
+        }
+
+
+        .clothing-category-nav,
+        .filter-by-nav {
+            padding: 0;
+
+            ul {
+                padding: 0;
+            }
+
+
+
+
+            @media (min-width: $tabletScreenWide) {
+                display: block;
+                // font-size: 0.8em;
+                padding-left: 20px;
+
+                a,
+                li {
+                    line-height: 1.7;
+                }
+
+                ul {
+                    padding: 0 10px 0 15px;
+                }
+            }
+        }
+    }
+
+
 
     .card-container {
+
         display: grid;
         grid-template-columns: 45% 45%;
         justify-content: space-evenly;
+        padding-top: 15px;
+
+        @media (min-width: $tabletScreenWide) {
+            grid-template-columns: 30% 30% 30%;
+        }
 
         .card-details {
             padding-bottom: 20px;

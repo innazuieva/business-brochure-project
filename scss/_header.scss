@@ -168,37 +168,71 @@ a {
 }
 
 .top-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    background-color: #a8ff3ee5;
-    display: none;
-    z-index: 200;
+
+    // Desktop
+    @media all and (min-width: $tabletScreenWide) {
+
+        background-color: $brand-color;
+
+        ul {
+
+            display: flex;
+            max-width: 45%;
+            margin: auto;
+            justify-content: space-between;
+            font-size: 1.2em;
+            padding: 0;
+        }
+
+        li {
+            width: 100%;
+            text-align: center;
+
+        }
+
+        a {
+            padding: 0 10px;
+        }
+    }
+
+    // Not desktop
+    @media not all and (min-width: $tabletScreenWide) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        background-color: #a8ff3ee5;
+        display: none;
+        z-index: 200;
+
+        ul {
+            flex-direction: column;
+            height: 100vh;
+            margin: auto;
+            padding: 0;
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        li {
+            width: 100%;
+            margin: auto;
+        }
+    }
 
     .show & {
         display: block;
     }
 
-    ul {
-        flex-direction: column;
-        height: 100vh;
-        margin: auto;
-        padding: 0;
-        padding-top: 100px;
-        text-align: center;
-    }
-
-    li {
-        width: 100%;
-        margin: auto;
-    }
-
     a {
         border-right: none;
         color: $text-color-dark;
-        line-height: 50px;
+        line-height: 75px;
+
+        @media (min-width: $tabletScreenWide) {
+            // padding: 0 50px;
+        }
 
         &:hover,
         &:active,
@@ -222,7 +256,7 @@ a {
     right: 4%;
     top: 2%;
 
-    @media (min-width: 700px) {
+    @media (min-width: $tabletScreenWide) {
         top: 3%;
     }
 }
@@ -233,7 +267,7 @@ a {
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: $tabletScreenWide) {
 
     .hide-on-desktop {
         display: none;
