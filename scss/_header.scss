@@ -181,7 +181,7 @@ a {
             margin: auto;
             justify-content: space-between;
             font-size: 1.2em;
-            padding: 20px 0;
+            // padding: 20px 0;
         }
     }
 
@@ -218,7 +218,11 @@ a {
     a {
         border-right: none;
         color: $text-color-dark;
-        line-height: 50px;
+        line-height: 75px;
+
+        @media (min-width: $tabletScreenWide) {
+            // padding: 0 50px;
+        }
 
         &:hover,
         &:active,
@@ -242,7 +246,7 @@ a {
     right: 4%;
     top: 2%;
 
-    @media (min-width: 700px) {
+    @media (min-width: $tabletScreenWide) {
         top: 3%;
     }
 }
@@ -253,7 +257,7 @@ a {
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: $tabletScreenWide) {
 
     .hide-on-desktop {
         display: none;
