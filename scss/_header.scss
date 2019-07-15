@@ -168,31 +168,51 @@ a {
 }
 
 .top-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    background-color: #a8ff3ee5;
-    display: none;
-    z-index: 200;
+
+    // Desktop
+    @media all and (min-width: $tabletScreenWide) {
+
+        background-color: $brand-color;
+
+        ul {
+
+            display: flex;
+            max-width: 50%;
+            margin: auto;
+            justify-content: space-between;
+            font-size: 1.2em;
+            padding: 20px 0;
+        }
+    }
+
+    // Not desktop
+    @media not all and (min-width: $tabletScreenWide) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        background-color: #a8ff3ee5;
+        display: none;
+        z-index: 200;
+
+        ul {
+            flex-direction: column;
+            height: 100vh;
+            margin: auto;
+            padding: 0;
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        li {
+            width: 100%;
+            margin: auto;
+        }
+    }
 
     .show & {
         display: block;
-    }
-
-    ul {
-        flex-direction: column;
-        height: 100vh;
-        margin: auto;
-        padding: 0;
-        padding-top: 100px;
-        text-align: center;
-    }
-
-    li {
-        width: 100%;
-        margin: auto;
     }
 
     a {
