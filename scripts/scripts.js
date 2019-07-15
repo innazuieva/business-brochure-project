@@ -3,15 +3,21 @@
 const body = document.body;
 const menu = document.getElementById('menu');
 
-menu.addEventListener('click', openMenu);
+if (menu !== null) {
 
-function openMenu() {
-    body.classList.toggle('show');
+    menu.addEventListener('click', openMenu);
+
+    function openMenu() {
+        body.classList.toggle('show');
+    }
+
+    menu.addEventListener('mousedown', function (e) {
+        e.preventDefault();
+    });
+} else {
+    console.log("menu is not available");
 }
 
-menu.addEventListener('mousedown', function (e) {
-    e.preventDefault();
-});
 
 
 
@@ -26,8 +32,6 @@ chatButton.addEventListener('click', openChat);
 function openChat() {
     chatForm.classList.add('live-chat-form-show');
     chatForm.classList.remove('live-chat-form');
-    //     chatForm.classList.toggle('live-chat-form');
-    //     chatForm.classList.toggle('live-chat-form-show');
 }
 
 closeChatButton.addEventListener('click', closeChat);
@@ -41,23 +45,71 @@ function closeChat() {
 
 // Sub-menu on Women's Page
 
-
 const submenu = document.getElementById('sub-menu');
 const subnav = document.getElementById('sub-nav');
 
 const submenu2 = document.getElementById('sub-menu2');
 const subnav2 = document.getElementById('sub-nav2');
 
-submenu.addEventListener('click', openSubMenu);
-submenu2.addEventListener('click', openSubMenu2);
+const sizeMenu = document.getElementById('size-menu');
+const sizeNav = document.getElementById('size-nav');
+const colorsMenu = document.getElementById('colors-menu');
+const colorsNav = document.getElementById('colors-nav');
+const brandsMenu = document.getElementById('brands-menu');
+const brandsNav = document.getElementById('brands-nav');
 
-function openSubMenu() {
-    subnav.classList.toggle('show-subnav');
+
+if (submenu !== null) {
+    submenu.addEventListener('click', openSubMenu);
+
+    function openSubMenu() {
+        subnav.classList.toggle('show-subnav');
+    }
+} else {
+    console.log("menu is not available");
 }
 
-function openSubMenu2() {
-    subnav2.classList.toggle('show-subnav');
+if (submenu2 !== null) {
+    submenu2.addEventListener('click', openSubMenu2);
+
+    function openSubMenu2() {
+        subnav2.classList.toggle('show-subnav');
+    }
+} else {
+    console.log("menu is not available");
 }
+
+if (sizeMenu !== null) {
+    sizeMenu.addEventListener('click', openSizeMenu);
+
+    function openSizeMenu() {
+        sizeNav.classList.toggle('show-sizeNav');
+    }
+} else {
+    console.log("menu is not available");
+}
+
+if (colorsMenu !== null) {
+    colorsMenu.addEventListener('click', openColorsMenu);
+
+    function openColorsMenu() {
+        colorsNav.classList.toggle('show-colorsNav');
+    }
+} else {
+    console.log("menu is not available");
+}
+
+if (brandsMenu !== null) {
+    brandsMenu.addEventListener('click', openBrandsMenu);
+
+    function openBrandsMenu() {
+        brandsNav.classList.toggle('show-brandsNav');
+    }
+} else {
+    console.log("menu is not available");
+}
+
+
 
 
 // Scroll-Then-Fix-Menu - Women's Page
@@ -68,14 +120,30 @@ window.onscroll = function () {
 
 var fixedNav = document.getElementById('womens-nav');
 
-// Get the offset position of the navbar
-var sticky = fixedNav.offsetTop;
+if (fixedNav !== null) {
+    var sticky = fixedNav.offsetTop;
+} else {
+    console.log("menu is not available");
+}
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
+    var isTabletMediaQuery = window.matchMedia("(min-width: 700px)");
+
+    if (isTabletMediaQuery.matches === false) {
+        return;
+    }
+
     if (window.pageYOffset > sticky) {
         fixedNav.classList.add("sticky");
+
+        let marginLeft = $(fixedNav).outerWidth();
+        $(".card-container").css({
+            "margin-left": marginLeft + "px"
+        });
     } else {
         fixedNav.classList.remove("sticky");
+        $(".card-container").css({
+            "margin-left": "0px"
+        });
     }
 }
