@@ -1,44 +1,123 @@
-// .coloured-header {
-//     background-color: $brand-color;
-// }
+.coloured-menu {
+    background-color: $brand-color;
+}
 
 
-nav {
-    display: none;
+.top-womens-nav {
 
-    @media (min-width: $tabletScreenWide) {
-        display: flex;
+    ul {
+        display: none;
+
+        @media (min-width: $tabletScreenWide) {
+            display: flex;
+            max-width: 50%;
+            margin: auto;
+            justify-content: space-between;
+            font-size: 1.2em;
+            padding: 20px 0;
+        }
     }
+
 }
 
 
 .womens-main {
-    padding: 20px 0;
-    display: flex;
+    display: block;
 
+    @media (min-width: $tabletScreenWide) {
+        display: flex;
+        padding: 20px 0;
+    }
 
-    .clothing-category-nav,
-    .filter-by-nav {
-        display: block;
-        // position: fixed;
-        font-size: 0.9em;
-        padding-left: 10px;
+    @media (min-width: $tabletScreenWide) {
+        .sticky {
+            position: fixed;
+            top: 0;
 
-        a,
-        li {
-            // font-size: 0.7em;
-            line-height: 1.9;
-        }
-
-        ul {
-            padding: 0 10px 0 15px;
+            .card-container {
+                // max-width: 85vw;
+            }
         }
     }
 
+    .womens-nav {
+        display: flex;
+        max-width: 90%;
+        margin: auto;
+        justify-content: space-between;
+
+        // position: fixed;
+
+
+
+        @media (min-width: $tabletScreenWide) {
+            flex-direction: column;
+            justify-content: start;
+            margin: 0;
+            padding-left: 10px;
+
+            h3 {
+                font-size: 1.5em;
+            }
+        }
+
+        .show-subnav {
+            display: block;
+            padding-left: 0;
+        }
+
+
+
+        ul {
+            display: none;
+
+            @media (min-width: $tabletScreenWide) {
+                display: block;
+            }
+        }
+
+
+        h3 {
+            font-size: 1em;
+            padding-bottom: 20px;
+            text-decoration: underline;
+        }
+
+
+        .clothing-category-nav,
+        .filter-by-nav {
+            padding: 0;
+
+            @media (min-width: $tabletScreenWide) {
+                display: block;
+                font-size: 1em;
+                padding-left: 20px;
+
+                a,
+                li {
+                    line-height: 1.7;
+                }
+
+                ul {
+                    padding: 0 10px 0 15px;
+                }
+            }
+        }
+    }
+
+
+
     .card-container {
+        // max-width: 85%;
+
         display: grid;
         grid-template-columns: 45% 45%;
         justify-content: space-evenly;
+
+        @media (min-width: $tabletScreenWide) {
+            grid-template-columns: 30% 30% 30%;
+            // padding-left: 15%;
+        }
 
         .card-details {
             padding-bottom: 20px;

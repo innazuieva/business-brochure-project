@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 
 <body>
@@ -15,7 +16,7 @@
 
     <!-- Header Section -->
 
-    <header class="coloured-header">
+    <header>
 
 
 
@@ -67,12 +68,12 @@
 
         <!-- Nav Bar -->
 
-        <nav class="top-nav">
+        <nav class="coloured-menu top-womens-nav">
             <ul>
                 <li><a href="#0">Sale</a></li>
                 <li><a href="#0">New</a></li>
                 <li><a href="#0">Clothing</a></li>
-                <li><a href="#0">Brands</a></li>
+                <li><a href="womens-brands.html">Brands</a></li>
                 <li><a href="#0">Accessories</a></li>
             </ul>
         </nav>
@@ -121,10 +122,13 @@
 
     <main class="womens-main">
 
-        <div class="womens-nav">
+        <div id="womens-nav" class="womens-nav">
+
             <nav class="clothing-category-nav">
-                <h3>Category</h3>
-                <ul>
+                <a id="sub-menu" href="#0">
+                    <h3>Category</h3>
+                </a>
+                <ul id="sub-nav">
                     <li><a href="#0">Dresses</a></li>
                     <li><a href="#0">Pants</a></li>
                     <li><a href="#0">Blouses</a></li>
@@ -136,9 +140,12 @@
                 </ul>
             </nav>
 
+
             <nav class="filter-by-nav">
-                <h3>Filter by:</h3>
-                <ul>
+                <a id="sub-menu2" href="#0">
+                    <h3>Filter by:</h3>
+                </a>
+                <ul id="sub-nav2">
                     <li>
                         <h4>Size</h4>
                         <ul>
@@ -147,6 +154,9 @@
                             <li><a href="#0">L</a></li>
                         </ul>
                     </li>
+                </ul>
+
+                <ul>
                     <li>
                         <h4>Colour</h4>
                         <ul>
@@ -155,6 +165,9 @@
                             <li><a href="#0">Blue</a></li>
                         </ul>
                     </li>
+                </ul>
+
+                <ul>
                     <li>
                         <h4>Brands</h4>
                         <ul>
@@ -335,6 +348,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="scripts/jquery.cycle2.min.js"></script>
     <script src="scripts/scripts.js"></script>
+
 
 </body>
 

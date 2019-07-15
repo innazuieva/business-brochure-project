@@ -38,4 +38,44 @@ function closeChat() {
 }
 
 
-// Home Page Slideshow
+
+// Sub-menu on Women's Page
+
+
+const submenu = document.getElementById('sub-menu');
+const subnav = document.getElementById('sub-nav');
+
+const submenu2 = document.getElementById('sub-menu2');
+const subnav2 = document.getElementById('sub-nav2');
+
+submenu.addEventListener('click', openSubMenu);
+submenu2.addEventListener('click', openSubMenu2);
+
+function openSubMenu() {
+    subnav.classList.toggle('show-subnav');
+}
+
+function openSubMenu2() {
+    subnav2.classList.toggle('show-subnav');
+}
+
+
+// Scroll-Then-Fix-Menu - Women's Page
+
+window.onscroll = function () {
+    myFunction()
+};
+
+var fixedNav = document.getElementById('womens-nav');
+
+// Get the offset position of the navbar
+var sticky = fixedNav.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        fixedNav.classList.add("sticky");
+    } else {
+        fixedNav.classList.remove("sticky");
+    }
+}
