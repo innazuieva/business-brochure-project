@@ -1,0 +1,154 @@
+div{
+  box-sizing:border-box;
+}
+
+
+// Brands Collapse Menu
+.collapsible {
+  background-color: #00FF00;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.5em;
+}
+
+.active, .collapsible:hover {
+  background-color: #00FF00;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #d9ff00;
+}
+
+
+.scroll-images {
+  img {
+             width: 400px;
+            height: 500px;
+             margin:10px;
+         }
+
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: space-evenly;
+}
+
+@media(max-width: 900px) { 
+.scroll-images {
+  display: inline;
+}
+
+}
+
+
+// Scroll Images
+
+// .scroll-images {
+//     img {
+//         width: 400px;
+//         height: 500px;
+//         margin:10px;
+//     }
+//         width: 500px;
+//         height: 400px;
+//         overflow-y: auto;
+//         overflow-x: hidden;
+
+//         transform: rotate(-90deg);
+//         transform-origin: right top;
+
+//         transform: rotate(90deg);
+//         transform-origin: right top;
+
+//         transform:rotate(-90deg) translateY(-100px);
+// }
+
+// .scroll-images > div {
+//     width: 100px;
+//     height: 100px;
+//   }
+
+
+
+// put at media query 850 px wide max width
+#gallerywrapper {
+  width:640px;
+  height:450px;
+  margin:0 auto;
+  position:relative;
+  font-family:verdana, arial, sans-serif;
+} 
+
+#gallerywrapper #gallery {
+  position:absolute;
+  left:0;
+  top:0;
+  height:450px;
+  width:640px;
+  overflow:hidden;
+  text-align:center;
+} 
+
+#gallerywrapper #gallery div {
+  width:640px; height:900px; 
+  padding-top:10px; 
+  position:relative;
+} 
+
+#gallerywrapper #gallery div img {
+  clear:both; 
+  display:block; 
+  margin:0 auto; 
+  border:0;
+} 
+
+#gallerywrapper #gallery div h3 {
+  padding:10px 0 0 0; 
+  margin:0; 
+  font-size:18px;
+} 
+
+#gallerywrapper #gallery div p {
+  padding:5px 0; 
+  margin:0; 
+  font-size:12px; 
+  line-height:18px;
+} 
+
+#gallery .previous{ 
+  display:inline;
+  float:left;
+  margin-left:80px;
+  text-decoration:none;
+} 
+
+#gallery .next{ 
+  display:inline;
+  float:right;
+  margin-right:80px;
+  text-decoration:none;
+}
+
+
+
