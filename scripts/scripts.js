@@ -59,6 +59,27 @@ const brandsMenu = document.getElementById('brands-menu');
 const brandsNav = document.getElementById('brands-nav');
 
 
+// Women'n Brands Menu
+
+const viewAllBrands = document.getElementById('view-all-brands');
+const viewAllBrandsMenu = document.getElementById('view-all-brands-menu');
+
+if (viewAllBrands !== null) {
+    viewAllBrands.addEventListener('click', openAllBrands);
+
+    function openAllBrands() {
+        viewAllBrandsMenu.classList.toggle('show-all-brands-menu');
+    }
+} else {
+    console.log("menu is not available");
+}
+
+
+
+
+
+
+
 if (submenu !== null) {
     submenu.addEventListener('click', openSubMenu);
 

@@ -1,0 +1,95 @@
+.sign-in-form {
+
+    max-width: 65vw;
+    padding: 60px 0;
+    margin: auto;
+
+    @media (min-width: $tabletScreenWide) {
+        max-width: 35vw;
+        padding: 80px 0;
+    }
+
+
+    h4 {
+        padding-bottom: 10px;
+    }
+
+    .continue-with-facebook,
+    .sign-in-submit {
+        background-color: $brand-color;
+        border: none;
+        border-radius: 5px 5px;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 0.8em;
+
+        @media (min-width: $tabletScreenWide) {
+            padding: 20px 0;
+            font-size: 1em;
+        }
+    }
+
+    .sign-in-email,
+    .sign-in-password {
+        border: 1px solid $brand-color;
+        width: 100%;
+        padding: 10px 5px;
+        border-radius: 5px 5px;
+        margin-bottom: 10px;
+
+        @media (min-width: $tabletScreenWide) {
+            padding: 20px 10px;
+            font-size: 0.8em;
+        }
+    }
+
+    .sign-in-submit {
+        margin-bottom: 10px;
+    }
+
+    .or {
+        display: flex;
+        padding: 5px 0;
+
+        .bar {
+            width: 100%;
+            height: 2px;
+        }
+
+        p {
+            padding: 0 10px;
+        }
+    }
+
+    .forgot-password-create-account-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .radio-button-flex {
+        display: flex;
+        padding-top: 10px;
+
+        @media (min-width: $tabletScreenWide) {
+            padding-top: 20px;
+        }
+
+        label {
+            font-size: 0.8em;
+
+            @media (min-width: $tabletScreenWide) {
+                font-size: 0.9em;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}

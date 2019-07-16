@@ -1,15 +1,59 @@
-.scroll-images-brands {
-    overflow: auto;
-    white-space: nowrap;
-    margin: 15px;
-    ;
+.womens-brands {
 
-    img {
-        max-width: 60%;
-        padding: 5px;
+    padding: 20px 0;
+
+    .brands-menu-container {
 
         @media (min-width: $tabletScreenWide) {
-            max-width: 22%;
+            width: 60%;
+            margin: auto;
+        }
+
+        h4 {
+            padding-left: 20px;
         }
     }
+
+
+    .view-all-brands-menu {
+        display: none;
+
+
+
+        &.show-all-brands-menu {
+            display: flex;
+            justify-content: space-evenly;
+
+            .brands {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+
+                a {
+                    font-size: 0.9em;
+                    line-height: 1.7;
+                }
+            }
+        }
+    }
+
+
+
+
+    .scroll-images-brands {
+        overflow: auto;
+        white-space: nowrap;
+        margin: 15px;
+        ;
+
+        img {
+            max-width: 65%;
+            padding: 5px;
+
+            @media (min-width: $tabletScreenWide) {
+                max-width: 22%;
+            }
+        }
+    }
+
 }
