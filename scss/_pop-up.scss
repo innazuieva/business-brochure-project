@@ -1,0 +1,97 @@
+.pop-up-body {
+
+    background-color: rgba(255, 255, 255, 0.575);
+
+    .pop-up-main {
+
+        .pop-up-content {
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            text-align: center;
+
+
+            .pop-up-logo {
+                padding: 0;
+                width: 30%;
+                margin-bottom: 10%;
+
+                @media (min-width: $tabletScreenWide) {
+                    width: 20%;
+                }
+            }
+
+            .bigger-font-size {
+                font-size: 2em;
+
+                @media (min-width: $tabletScreenWide) {
+                    font-size: 5em;
+                }
+            }
+
+            .smaller-font-size {
+                font-size: 0.8em;
+
+                @media (min-width: $tabletScreenWide) {
+                    font-size: 1em;
+                }
+            }
+
+            p {
+                padding-bottom: 5px;
+                font-size: 1em;
+
+                @media (min-width: $tabletScreenWide) {
+                    padding-bottom: 10px;
+                    font-size: 1.5em;
+                }
+            }
+
+            .uppercase {
+                text-transform: uppercase;
+            }
+
+            .pop-up-button {
+                background-color: white;
+                border: 1px solid $brand-color;
+                border-radius: 5px 5px;
+                width: 100%;
+                padding: 15px 5px;
+                margin: 5px 0;
+                font-size: 1em;
+
+                @media (min-width: $tabletScreenWide) {
+                    width: 60%;
+                    padding: 20px 5px;
+                    font-size: 1.2em;
+                    margin: 10px 0;
+                }
+            }
+
+            .pop-up-button02 {
+                font-size: 0.9em;
+
+                @media (min-width: $tabletScreenWide) {
+                    font-size: 1em;
+                }
+            }
+
+            .smaller-font-size {
+                margin-bottom: 10%;
+            }
+        }
+
+        .pop-up-img {
+            object-fit: contain;
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
