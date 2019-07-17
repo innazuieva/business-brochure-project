@@ -38,7 +38,47 @@ main {
     }
 }
 
+.rp {
+    margin-top: 40px;
+}
+
+.rvi {
+    margin-top: 40px;
+}
+
+.cab {
+    margin-top: 40px;
+}
 
 .subtotal-p {
     margin-left: 20px;
+}
+
+// images 
+.related-products {
+
+    img {
+        width: 400px;
+        height: 500px;
+        border: solid #a8ff3e thin;
+        margin: 10px;
+    }
+}
+
+.recently-viewed {
+    img {
+        width: 400px;
+        height: 500px;
+        border: solid #a8ff3e thin;
+        margin: 10px;
+    }
+}
+
+.customers-also-bought {
+    img {
+        width: 400px;
+        height: 500px;
+        border: solid #a8ff3e thin;
+        margin: 10px;
+    }
 }
