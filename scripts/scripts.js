@@ -1,5 +1,4 @@
 // Hamburger Menu 
-
 const body = document.body;
 const menu = document.getElementById('menu');
 

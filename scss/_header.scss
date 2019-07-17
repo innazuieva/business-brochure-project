@@ -243,7 +243,7 @@ a {
     }
 }
 
-@media not all and (min-width: 700px) {
+@media not all and (min-width: $tabletScreenWide) {
     .hide-on-mobile {
         display: none;
     }

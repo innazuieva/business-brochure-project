@@ -1,28 +1,111 @@
-// footer {
-//     font-size: 1em;
-//     font-weight: bold;
-//     color: #FFF;
-//     background-color: #00FF00;
-//     padding: 10px;
-//     height: auto;
-//     width: 90%;
-//     width: 981px;
-//     margin: 0 auto 8px;
-// }
+.footer {
+    padding: 5% 0 1%;
+    margin-top: 5%;
+    background-color: $brand-color;
 
-// .foot-left {
-//     text-align: left;
-// }
+    @media (min-width: $tabletScreenWide) {
+        margin-top: 5%;
+        padding: 3% 0 1%;
+    }
 
-// .foot-mid {
-//     text-align: center;
-// }
+    .footer-content {
 
-// .foot-right {
-//     text-align: right;
-// }
+        max-width: 90%;
+        margin: auto;
 
-// .social {
-//     text-align: center;
-//     size: 2em;
-// }
+        @media (min-width: $tabletScreenWide) {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 5%;
+
+            .get-help {
+                padding: 0;
+
+                li {
+                    line-height: 1.7;
+                }
+            }
+        }
+
+        h3 {
+            text-align: center;
+
+            @media (min-width: $tabletScreenWide) {
+                text-align: start;
+                font-size: 1.5em;
+            }
+        }
+
+
+
+        .email-footer {
+            background-color: transparent;
+            border: none;
+            padding: 10px 0;
+            border-bottom: 1px solid black;
+            width: 100%;
+
+            @media (min-width: $tabletScreenWide) {
+                padding: 15px 0;
+                font-size: 0.9em;
+                width: 100%;
+            }
+        }
+
+        .footer-submit {
+            background-color: white;
+            width: 100%;
+            padding: 10px 0;
+            border: none;
+            border-radius: 4px 4px;
+            font-size: 1em;
+
+            @media (min-width: $tabletScreenWide) {
+                padding: 15px 30px;
+            }
+        }
+
+        .mobile-only-footer-links {
+            text-align: center;
+            font-size: 0.8em;
+            padding: 10px 0 15px;
+
+            li {
+                border-top: 1px solid black;
+
+                &:last-child {
+                    border-bottom: 1px solid black;
+                }
+
+                &:hover {
+                    background-color: #0000000c;
+                }
+
+                a {
+                    line-height: 1.7;
+                }
+            }
+        }
+
+
+        .flex-email-footer {
+            @media (min-width: $tabletScreenWide) {
+                display: flex;
+            }
+        }
+    }
+
+
+
+    .social {
+        text-align: center;
+
+        .icon {
+            margin: 0 5px;
+
+            @media (min-width: $tabletScreenWide) {
+                margin: 0 15px;
+            }
+        }
+    }
+}
