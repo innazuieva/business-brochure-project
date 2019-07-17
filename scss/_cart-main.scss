@@ -1,0 +1,44 @@
+// Buttons
+.coupon {
+    background-color: #a8ff3e;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.proceed-to-checkout {
+    background-color: #a8ff3e;
+    border: 1px solid black;    
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.remove-item {
+    background-color: red;
+    border: 1px solid black;    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.add-to-wishlist {
+    background-color: rgb(0, 255, 0);
+    border: 1px solid black;    
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    font-weight: bold;
+}
+
+// Typography
+
+main {
+    h2 {
+        margin-left: 20px;
+    }
+}
+
+
+.subtotal-p {
+    margin-left: 20px;
+}

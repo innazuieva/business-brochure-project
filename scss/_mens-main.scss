@@ -10,26 +10,27 @@
     margin-right: auto;
     width: 70%;
     size: 25m;
+    max-width: 100%;
 }
 
 .mens-center-content {
     float: left;
     margin-top: 100px;
     margin-bottom: 100px;
-    size: 80%;
+    
 }
 
 .man-street {
     margin-right: 50px;
     margin-left: 100px;
     size: 50%;
-    border: 5px solid #00FF00;
 }
 
 .man-ledge {
     margin-left: 80px;
     margin-right: 15px;
-    border: 5px solid #00FF00;
+    width: 600px;
+    height: 900px;
 }
 
 
@@ -39,6 +40,20 @@
     margin-right: auto;
     margin-bottom: 100px;
 }
+
+@media screen and (min-width: 320px){
+
+    .mens-banner {
+        max-width: 100%;
+    }
+
+    .mens-announcement {
+        align-content: center;
+    }
+
+    
+}
+
 
 // footer {
 //     font-size: 1em;

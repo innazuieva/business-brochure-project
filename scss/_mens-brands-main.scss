@@ -5,7 +5,7 @@ div{
 
 // Brands Collapse Menu
 .collapsible {
-  background-color: #00FF00;
+  background-color: #a8ff3e;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -89,25 +89,41 @@ div{
 //     height: 100px;
 //   }
 
-
+#gallerywrapper {
+  display: none;
+}
 
 // put at media query 850 px wide max width
+@media(min-width: 850px) {
+
+.scroll-images {
+  display: none;
+}
+
 #gallerywrapper {
-  width:640px;
-  height:450px;
+  width:850px;
+  height:500px;
   margin:0 auto;
   position:relative;
   font-family:verdana, arial, sans-serif;
+  margin-bottom: 200px;
+  display: block;
+
+  img {
+    width: 300px;
+    height: 400px;
+  }
 } 
 
 #gallerywrapper #gallery {
   position:absolute;
   left:0;
   top:0;
-  height:450px;
-  width:640px;
+  height:800px;
+  width:690px;
   overflow:hidden;
   text-align:center;
+  margin-bottom: 100px;
 } 
 
 #gallerywrapper #gallery div {
@@ -152,3 +168,4 @@ div{
 
 
 
+}
