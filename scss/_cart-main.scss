@@ -206,9 +206,7 @@
             }
 
             .scroll-card:hover {
-                // opacity: 0.3;
-                // background-color: #000;
-                // opacity: 0.5;
+                opacity: 0.9;
                 transition: transform .7s;
                 transform: scale(1.2);
             }

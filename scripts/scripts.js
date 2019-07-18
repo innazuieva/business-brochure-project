@@ -216,3 +216,47 @@ $(".previous").click(function () {
     }
     updateMensBrandsImageAndName()
 });
+
+
+
+
+
+
+
+// $("#pop-up-body").click(function () {
+
+//         }
+
+
+
+const popUp = document.getElementById('pop-up-body');
+
+
+if (popUp !== null) {
+
+    setTimeout(function showPopUp() {
+        popUp.classList.toggle('show-pop-up');
+    }, 4000);
+} else {
+    console.log("menu is not available");
+}
+
+
+
+const closePopUps = $(".pop-up-button");
+
+
+if (closePopUps !== null) {
+    $.each(closePopUps, function (i, element) {
+        $(element).click(function () {
+            closePopUpWindow()
+        })
+        console.log($(element));
+    });
+
+    function closePopUpWindow() {
+        popUp.classList.toggle('show-pop-up');
+    }
+} else {
+    console.log("menu is not available");
+}
