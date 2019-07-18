@@ -4,7 +4,7 @@
     background-color: $brand-color;
 
     @media (min-width: $tabletScreenWide) {
-        margin-top: 5%;
+        margin: 5% 0 0;
         padding: 3% 0 1%;
     }
 
@@ -16,7 +16,7 @@
         @media (min-width: $tabletScreenWide) {
             display: flex;
             justify-content: space-around;
-            padding-bottom: 5%;
+            padding-bottom: 2%;
 
             .get-help {
                 padding: 0;

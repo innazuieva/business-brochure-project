@@ -117,57 +117,87 @@
 
     <!-- Main Section -->
 
-    <main>
+    <main class="cart-main">
 
-        <img src="images/checkout.jpg" alt="Checkout item">
+        <div class="flex-top-section">
 
-        <div class="subtotal-p">
-            <h2>Cart subtotal (1 item): $79.99</h2>
-            <p>Item Name</p>
-            <p>Cotton Black</p>
+            <div class="flex-subtotal">
+
+
+                <img class="checkout-item" src="images/checkout.jpg" alt="Checkout item">
+
+
+                <div class="item-details">
+                    <div class="item-name">
+                        <h3>Item Name</h3>
+                        <span>Cotton Black</span><br>
+                        <span>Quantity</span>
+                        <select class="shopping-cart-button select-btn" amount="number">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+
+                    <div class="proceed">
+                        <h3>Cart subtotal (1 item):<br>$79.99</h3>
+                        <button class="hide-on-mobile shopping-cart-button proceed-to-checkout-btn">Proceed to
+                            Checkout</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="buttons-container">
+                <button class="hide-on-desktop shopping-cart-button proceed-to-checkout-btn">Proceed to
+                    Checkout</button>
+                <button class="shopping-cart-button coupon-btn">Use Coupon</button>
+
+                <button class="shopping-cart-button delete-btn">Delete</button>
+                <button class="shopping-cart-button add-to-wishlist-btn">Add to Wishlist</button>
+            </div>
+
         </div>
 
-        <button class="coupon">Use Coupon</button>
-        <button class="proceed-to-checkout">Proceed to Checkout</button>
+        <!-- Related Products Section -->
 
-        <select amount="number">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select>
+        <div class="related-items-section">
 
-        <button class="remove-item">Delete</button>
-        <button class="add-to-wishlist">Add to Wishlist</button>
+            <h3 class="related-products">Related products</h3>
 
-        <h2 class="rp" >Related products</h2>
+            <div class="related-products-gallery">
 
-        <div class="scroll related-products">
-            <img class="scroll-card" src="images/shirt-10.jpg" alt="Related item">
-            <img class="scroll-card" src="images/shirt-14.jpg" alt="Related item">
-            <img class="scroll-card" src="images/shirt-13.jpg" alt="Related item">
-            <img class="scroll-card" src="images/shirt-7.jpg" alt="Related item">
-            <img class="scroll-card" src="images/shirt-15.jpg" alt="Related item">
-        </div>
+                <img class="scroll-card" src="images/shirt-10.jpg" alt="Related item">
+                <img class="scroll-card" src="images/shirt-14.jpg" alt="Related item">
+                <img class="scroll-card" src="images/shirt-13.jpg" alt="Related item">
+                <img class="scroll-card" src="images/shirt-7.jpg" alt="Related item">
+                <img class="scroll-card" src="images/shirt-15.jpg" alt="Related item">
+            </div>
 
-        <h2 class="rvi" >Recently viewed items</h2>
+            <h3 class="recently-viewed-items">Recently viewed items</h3>
 
-        <div class="scroll recently-viewed">
-            <img class="scroll-card" src="images/shirt-1.jpg" alt="Related item">
-            <img class="scroll-card" src="images/shirt-2.jpg" alt="Related item">
-            <img class="scroll-card" src="images/shirt-3.jpg" alt="Related item">
-            <img class="scroll-card" src="images/shirt-4.jpg" alt="Related item">
-            <img class="scroll-card" src="images/shirt-5.jpg" alt="Related item">
-        </div>
+            <div class="recently-viewed-items-gallery">
+                <img class="scroll-card" src="images/shirt-1.jpg" alt="Related item">
+                <img class="scroll-card" src="images/shirt-2.jpg" alt="Related item">
+                <img class="scroll-card" src="images/shirt-3.jpg" alt="Related item">
+                <img class="scroll-card" src="images/shirt-4.jpg" alt="Related item">
+                <img class="scroll-card" src="images/shirt-5.jpg" alt="Related item">
+            </div>
 
-        <h2 class="cab" >Customers also bought</h2>
+            <h3 class="customers-also-bought">Customers also bought</h3>
 
-        <div class="scroll customers-also-bought">
-            <img class="scroll-card" src="images/shirt-11.jpg" alt="Related item">
-            <img class="scroll-card" src="images/shirt-12.jpg" alt="Related item">
-            <img class="scroll-card" src="images/shirt-6.jpg" alt="Related item">
-            <img class="scroll-card" src="images/shirt-9.jpg" alt="Related item">
-            <img class="scroll-card" src="images/shirt-8.jpg" alt="Related item">
+            <div class="customers-also-bought-gallery">
+                <img class="scroll-card" src="images/shirt-11.jpg" alt="Related item">
+                <img class="scroll-card" src="images/shirt-12.jpg" alt="Related item">
+                <img class="scroll-card" src="images/shirt-6.jpg" alt="Related item">
+                <img class="scroll-card" src="images/shirt-9.jpg" alt="Related item">
+                <img class="scroll-card" src="images/shirt-8.jpg" alt="Related item">
+            </div>
+
         </div>
     </main>
 
