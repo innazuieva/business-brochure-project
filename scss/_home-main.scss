@@ -3,7 +3,11 @@
 
 .home-page-main {
 
+    padding-bottom: 15px;
 
+    @media (min-width: $tabletScreenWide) {
+        padding: 0;
+    }
 
     // Sale Line on the Home Page
 

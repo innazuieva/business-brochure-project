@@ -1,32 +1,27 @@
-div{
-  box-sizing:border-box;
-}
-
-
 // Brands Collapse Menu
+
+
 .collapsible {
-  background-color: #a8ff3e;
-  color: white;
-  font-weight: bold;
+  background-color: $brand-color;
+  border: none;
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: none;
   text-align: left;
   outline: none;
-  font-size: 1.5em;
-}
+  font-size: 1.3em;
 
-.active, .collapsible:hover {
-  background-color: #00FF00;
-}
+  @media (min-width: $tabletScreenWide) {
+    background-color: white;
+    border: 1px solid black;
+  }
 
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+  &:after {
+    content: '\002B';
+    color: black;
+    float: right;
+  }
 }
 
 .active:after {
@@ -34,138 +29,87 @@ div{
 }
 
 .content {
-  padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #d9ff00;
-}
+  background-color: $brand-color;
+  padding: 0;
+  margin: 0;
 
+  li {
+    line-height: 2.5;
+    border-top: 1px solid black;
 
-.scroll-images {
-  img {
-             width: 400px;
-            height: 500px;
-             margin:10px;
-         }
+    @media (min-width: $tabletScreenWide) {
+      &:first-child {
+        border-top: none;
+      }
+    }
 
-  display: grid;
-  grid-template-columns: 45% 45%;
-  justify-content: space-evenly;
-}
+    &:hover {
+      background-color: #0000000c;
+    }
 
-@media(max-width: 900px) { 
-.scroll-images {
-  display: inline;
-}
+    a {
+      padding-left: 5%;
 
-}
-
-
-// Scroll Images
-
-// .scroll-images {
-//     img {
-//         width: 400px;
-//         height: 500px;
-//         margin:10px;
-//     }
-//         width: 500px;
-//         height: 400px;
-//         overflow-y: auto;
-//         overflow-x: hidden;
-
-//         transform: rotate(-90deg);
-//         transform-origin: right top;
-
-//         transform: rotate(90deg);
-//         transform-origin: right top;
-
-//         transform:rotate(-90deg) translateY(-100px);
-// }
-
-// .scroll-images > div {
-//     width: 100px;
-//     height: 100px;
-//   }
-
-#gallerywrapper {
-  display: none;
-}
-
-// put at media query 850 px wide max width
-@media(min-width: 850px) {
-
-.scroll-images {
-  display: none;
-}
-
-#gallerywrapper {
-  width:850px;
-  height:500px;
-  margin:0 auto;
-  position:relative;
-  font-family:verdana, arial, sans-serif;
-  margin-bottom: 200px;
-  display: block;
-
-  img {
-    width: 300px;
-    height: 400px;
+      @media (min-width: $tabletScreenWide) {
+        padding-left: 2%;
+      }
+    }
   }
-} 
-
-#gallerywrapper #gallery {
-  position:absolute;
-  left:0;
-  top:0;
-  height:800px;
-  width:690px;
-  overflow:hidden;
-  text-align:center;
-  margin-bottom: 100px;
-} 
-
-#gallerywrapper #gallery div {
-  width:640px; height:900px; 
-  padding-top:10px; 
-  position:relative;
-} 
-
-#gallerywrapper #gallery div img {
-  clear:both; 
-  display:block; 
-  margin:0 auto; 
-  border:0;
-} 
-
-#gallerywrapper #gallery div h3 {
-  padding:10px 0 0 0; 
-  margin:0; 
-  font-size:18px;
-} 
-
-#gallerywrapper #gallery div p {
-  padding:5px 0; 
-  margin:0; 
-  font-size:12px; 
-  line-height:18px;
-} 
-
-#gallery .previous{ 
-  display:inline;
-  float:left;
-  margin-left:80px;
-  text-decoration:none;
-} 
-
-#gallery .next{ 
-  display:inline;
-  float:right;
-  margin-right:80px;
-  text-decoration:none;
 }
 
+.gallerywrapper {
+  display: none;
+
+  @media (min-width: $tabletScreenWide) {
+    display: block;
+    position: relative;
 
 
+    .gallery {
+      position: relative;
+
+      &:not(:first-child) {
+        display: none;
+      }
+
+
+      .brand-card {
+        text-align: center;
+        padding-top: 3%;
+
+        &:not(:first-child) {
+          display: none;
+        }
+
+        .previous {
+          position: absolute;
+          left: 35%;
+          bottom: 50%;
+        }
+
+        .next {
+          position: absolute;
+          bottom: 50%;
+          right: 35%;
+        }
+
+        img {
+          width: 25vw;
+          height: 53vh;
+          overflow: hidden;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+.scroll-images {
+
+  @media (min-width: $tabletScreenWide) {
+    display: none;
+  }
 }

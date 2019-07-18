@@ -1,53 +1,47 @@
 // Men's Page Images - Main Section
 
-* {
-    box-sizing: border-box;
-}
 
-.mens-banner {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    size: 25m;
-    max-width: 100%;
-}
+.mens-main {
+    padding-top: 5%;
 
-.mens-center-content {
-    float: left;
-    margin-top: 100px;
-    margin-bottom: 100px;
-
-}
-
-.man-street {
-    margin-right: 50px;
-    margin-left: 100px;
-    size: 50%;
-}
-
-.man-ledge {
-    margin-left: 80px;
-    margin-right: 15px;
-    width: 600px;
-    height: 900px;
-}
-
-
-.mens-announcement {
-    display: block;
-    margin-left: 300px;
-    margin-right: auto;
-    margin-bottom: 100px;
-}
-
-@media screen and (min-width: 320px) {
-
-    .mens-banner {
-        max-width: 100%;
+    @media (min-width: $tabletScreenWide) {
+        padding-top: 0;
     }
 
-    .mens-announcement {
-        align-content: center;
+    .mens-banner img {
+        width: 100%;
+    }
+
+    .mens-center-content {
+        @media (min-width: $tabletScreenWide) {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 5%;
+
+            img {
+                max-width: 30%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .mens-announcement img {
+        width: 100%;
+    }
+
+    .accessories {
+        width: 100%;
+    }
+
+    .tops-bottoms-accessories {
+        @media (min-width: $tabletScreenWide) {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 5%;
+
+            img {
+                width: 30vw;
+            }
+        }
     }
 }

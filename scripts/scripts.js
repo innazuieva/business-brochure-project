@@ -152,19 +152,20 @@ if (brandsMenu !== null) {
 
 // Scroll-Then-Fix-Menu - Women's Page
 
-window.onscroll = function () {
-    myFunction()
-};
 
-var fixedNav = document.getElementById('womens-nav');
 
-if (fixedNav !== null) {
-    var sticky = fixedNav.offsetTop;
+var fixedNavOnWomensPage = document.getElementById('womens-nav');
+
+if (fixedNavOnWomensPage !== null) {
+    window.onscroll = function () {
+        handleScrollMenuWomensPage()
+    };
+    var sticky = fixedNavOnWomensPage.offsetTop;
 } else {
     console.log("menu is not available");
 }
 
-function myFunction() {
+function handleScrollMenuWomensPage() {
     var isTabletMediaQuery = window.matchMedia("(min-width: 700px)");
 
     if (isTabletMediaQuery.matches === false) {
@@ -172,16 +173,46 @@ function myFunction() {
     }
 
     if (window.pageYOffset > sticky) {
-        fixedNav.classList.add("sticky");
+        fixedNavOnWomensPage.classList.add("sticky");
 
-        let marginLeft = $(fixedNav).outerWidth();
+        let marginLeft = $(fixedNavOnWomensPage).outerWidth();
         $(".card-container").css({
             "margin-left": marginLeft + "px"
         });
     } else {
-        fixedNav.classList.remove("sticky");
+        fixedNavOnWomensPage.classList.remove("sticky");
         $(".card-container").css({
             "margin-left": "0px"
         });
     }
 }
+
+
+var brandsImage = ["images/nike.jpg", "images/adidas.jpg", "images/puma.jpg", "images/th.jpg", "images/ralph-lauren.jpg", "images/van-heusen.jpg", "images/saint-laurent.jpg", "images/off-white.jpg", "images/champ.jpg", "images/hollister.jpg"];
+var brandsNames = ["Nike", "Adidas", "Puma", "Tommy Hilfiger", "Ralph Lauren", "Van Heusen", "Saint Laurent", "Off-White", "Champion", "Hollister"];
+var imageIndex = 0;
+
+
+function updateMensBrandsImageAndName() {
+    $($("#mens-brand-img")[0]).attr("src", brandsImage[imageIndex]);
+    $($("#mens-brand-name")[0]).html(brandsNames[imageIndex]);
+}
+
+
+$(".next").click(function () {
+    imageIndex++;
+    if (imageIndex === brandsImage.length) {
+        imageIndex = 0;
+    }
+    updateMensBrandsImageAndName()
+});
+
+
+
+$(".previous").click(function () {
+    imageIndex--;
+    if (imageIndex === -1) {
+        imageIndex = brandsImage.length - 1;
+    }
+    updateMensBrandsImageAndName()
+});
