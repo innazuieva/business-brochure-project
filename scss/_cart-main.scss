@@ -1,89 +1,3 @@
-// // Buttons
-// .coupon {
-//     background-color: #a8ff3e;
-//     border: 1px solid black;
-//     font-family: 'Roboto', sans-serif;
-//     margin: 10px;
-//     font-weight: bold;
-// }
-
-// .proceed-to-checkout {
-//     background-color: #a8ff3e;
-//     border: 1px solid black;    
-//     font-family: 'Roboto', sans-serif;
-//     margin: 10px;
-//     font-weight: bold;
-// }
-
-// .remove-item {
-//     background-color: red;
-//     border: 1px solid black;    
-//     font-family: 'Roboto', sans-serif;
-//     margin-right: 10px;
-//     font-weight: bold;
-// }
-
-// .add-to-wishlist {
-//     background-color: rgb(0, 255, 0);
-//     border: 1px solid black;    
-//     font-family: 'Roboto', sans-serif;
-//     margin: 10px;
-//     font-weight: bold;
-// }
-
-// // Typography
-
-// main {
-//     h2 {
-//         margin-left: 20px;
-//     }
-// }
-
-// .rp {
-//     margin-top: 40px;
-// }
-
-// .rvi {
-//     margin-top: 40px;
-// }
-
-// .cab {
-//     margin-top: 40px;
-// }
-
-// .subtotal-p {
-//     margin-left: 20px;
-// }
-
-// // images 
-// .related-products {
-
-//     img {
-//         width: 400px;
-//         height: 500px;
-//         border: solid #a8ff3e thin;
-//         margin: 10px;
-//     }
-// }
-
-// .recently-viewed {
-//     img {
-//         width: 400px;
-//         height: 500px;
-//         border: solid #a8ff3e thin;
-//         margin: 10px;
-//     }
-// }
-
-// .customers-also-bought {
-//     img {
-//         width: 400px;
-//         height: 500px;
-//         border: solid #a8ff3e thin;
-//         margin: 10px;
-//     }
-// }
-
 .cart-main {
     padding-top: 10%;
     max-width: 90%;
@@ -202,7 +116,7 @@
             margin: 15px 0;
 
             @media (min-width: $tabletScreenWide) {
-                margin: 1% 0;
+                margin: 3% 0;
             }
 
             .scroll-card:hover {
@@ -212,13 +126,11 @@
             }
 
             img {
-                height: 30vh;
+                height: 28vh;
                 margin-right: 5%;
 
                 @media (min-width: $tabletScreenWide) {
                     height: 30vh;
-                    padding: 15px;
-
                 }
             }
         }
